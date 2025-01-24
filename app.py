@@ -21,7 +21,7 @@ app.config.suppress_callback_exceptions = True
 def load_data():
     # To do: Completar la función 
      # Cargar el archivo CSV como un DataFrame
-    df = pd.read_csv('C:/Users/Lenovo/soluciones/Archivos-requeridos/datos_energia.csv')
+    df = pd.read_csv('/Users/camilomat/Library/CloudStorage/GoogleDrive-camilo.matson14@gmail.com/My Drive/0-Proyectos-analitica/Uniandes/Sem_IV_MLop_I/s1_t1_mlops/datos_energia.csv')
   
     
     # Convertir la columna de fecha a formato datetime
@@ -249,4 +249,4 @@ def update_output_div(date, hour, proy):
 
 # Run the server
 if __name__ == "__main__":
-    app.run_server(host =" 0.0.0.0 ", debug=True)
+    app.run_server(debug=True)
